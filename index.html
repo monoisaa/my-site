@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasilisa Nazarova</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">VN</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <ul class="nav__links">
+        <li><a href="#about" data-ru="обо мне" data-en="about">обо мне</a></li>
+        <li><a href="#experience" data-ru="опыт" data-en="experience">опыт</a></li>
+        <li><a href="#skills" data-ru="навыки" data-en="skills">навыки</a></li>
+        <li><a href="#blog" data-ru="блог" data-en="notes">блог</a></li>
+        <li><a href="#contact" data-ru="контакт" data-en="contact">контакт</a></li>
+      </ul>
+      <button class="lang-toggle" aria-label="Switch language">
+        <span class="lang-toggle__option lang-toggle__option--active" data-lang="ru">RU</span>
+        <span class="lang-toggle__separator">/</span>
+        <span class="lang-toggle__option" data-lang="en">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="section section--hero">
+      <div class="hero">
+        <div class="hero__content">
+          <h1 class="hero__name" data-ru="ВАСИЛИСА НАЗАРОВА" data-en="VASILISA NAZAROVA">ВАСИЛИСА НАЗАРОВА</h1>
+          <p class="hero__tagline">Executive Assistant · Business Partner · Systems Thinker</p>
+          <p class="hero__intro" data-ru="Привет, я Василиса. Я помогаю руководителям высвобождать время и выстраивать системы, которые работают без хаоса." data-en="Hi, I'm Vasilisa. I help leaders reclaim their time and build systems that run without chaos.">Привет, я Василиса. Я помогаю руководителям высвобождать время и выстраивать системы, которые работают без хаоса.</p>
+        </div>
+        <div class="hero__aside">
+          <div class="sticker sticker--yellow sticker--wobble anim-float">
+            <span>open to work ✦</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="deco-arrow" aria-hidden="true">
+      <svg width="32" height="80" viewBox="0 0 32 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16 4 C14 20, 18 35, 15 50 C13 60, 17 65, 16 72" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" fill="none" opacity="0.3"/>
+        <path d="M10 66 C12 70, 15 74, 16 76 C17 74, 20 70, 22 66" stroke="#1A1A1A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.3"/>
+      </svg>
+    </div>
+
+    <section id="about" class="section section--about anim-reveal">
+      <div class="about">
+        <h2 class="section-title">[. ABOUT ]</h2>
+        <div class="about__grid">
+          <div class="about__text">
+            <p><span data-ru="8+ лет в управлении проектами и бизнес-ассистировании. Прошла путь от офис-менеджера до бизнес-ассистента. Специализируюсь на оптимизации процессов, внедрении AI-инструментов" data-en="8+ years in project management and executive assistance. From office manager to business assistant — I specialize in process optimization, AI tool integration">8+ лет в управлении проектами и бизнес-ассистировании. Прошла путь от офис-менеджера до бизнес-ассистента. Специализируюсь на оптимизации процессов, внедрении AI-инструментов</span><svg class="deco-star" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 1 L8.2 5.3 L13 5.5 L9.2 8.2 L10.2 13 L7 10.2 L3.8 13 L4.8 8.2 L1 5.5 L5.8 5.3 Z" fill="#F2C4CE" opacity="0.8"/></svg><span data-ru=" и координации интернациональных команд. Работаю удалённо из Москвы." data-en=" and international team coordination. Working remotely from Moscow."> и координации интернациональных команд. Работаю удалённо из Москвы.</span></p>
+            <p class="about__tools">Notion · CRM · Google Workspace · Miro · AI tools</p>
+          </div>
+          <div class="about__aside">
+            <div class="id-card">
+              <div class="id-card__header">PERSONAL CARD · NO. 001</div>
+              <div class="id-card__photo"></div>
+              <div class="id-card__fields">
+                <div class="id-card__field">
+                  <span class="id-card__label">NAME:</span>
+                  <span class="id-card__value" data-ru="Василиса Назарова" data-en="Vasilisa Nazarova">Василиса Назарова</span>
+                </div>
+                <div class="id-card__field">
+                  <span class="id-card__label">SPECIALTY:</span>
+                  <span class="id-card__value">Business Assistant</span>
+                </div>
+                <div class="id-card__field">
+                  <span class="id-card__label">BELIEVES IN:</span>
+                  <span class="id-card__value">Systems over hustle</span>
+                </div>
+              </div>
+            </div>
+            <div class="sticker sticker--pink anim-float">
+              <span>systems over hustle</span>
+              <svg class="deco-underline" width="120" height="8" viewBox="0 0 120 8" aria-hidden="true">
+                <path d="M2 5 C10 2, 20 7, 30 4 C40 1, 50 6, 60 3 C70 1, 80 6, 90 4 C100 2, 110 5, 118 3" stroke="#1A1A1A" stroke-width="1" stroke-linecap="round" fill="none" opacity="0.35"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section--experience anim-reveal">
+      <div class="experience">
+        <h2 class="section-title">[. EXPERIENCE ]</h2>
+        <div class="timeline" data-timeline>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2025–2026</span>
+              <h3 class="timeline__company" data-ru="Медиа-проект EdTech" data-en="EdTech Media Project">Медиа-проект EdTech</h3>
+              <p class="timeline__role" data-ru="Бизнес-ассистент" data-en="Business Assistant">Бизнес-ассистент</p>
+              <p class="timeline__desc" data-ru="Автоматизация процессов, международная команда 12+ человек." data-en="Process automation, international team of 12+ people.">Автоматизация процессов, международная команда 12+ человек.</p>
+            </div>
+            <div class="sticker sticker--yellow sticker--timeline">
+              <span data-ru="−35% рутины через AI" data-en="−35% routine via AI">−35% рутины через AI</span>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2023–2025</span>
+              <h3 class="timeline__company" data-ru="Клиника косметологии" data-en="Cosmetology Clinic">Клиника косметологии</h3>
+              <p class="timeline__role" data-ru="Бизнес-ассистент" data-en="Business Assistant">Бизнес-ассистент</p>
+              <p class="timeline__desc" data-ru="Система отчётности, управление командой до 10 человек." data-en="Reporting system, team management up to 10 people.">Система отчётности, управление командой до 10 человек.</p>
+            </div>
+            <div class="sticker sticker--yellow sticker--timeline">
+              <span data-ru="+4 часа/день для руководителя" data-en="+4 hours/day for the CEO">+4 часа/день для руководителя</span>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2021–2023</span>
+              <h3 class="timeline__company" data-ru="Недвижимость (Турция, ОАЭ)" data-en="Real Estate (Turkey, UAE)">Недвижимость (Турция, ОАЭ)</h3>
+              <p class="timeline__role" data-ru="Бизнес-ассистент руководителя" data-en="Executive Business Assistant">Бизнес-ассистент руководителя</p>
+              <p class="timeline__desc" data-ru="Календарь, отчёты, travel." data-en="Calendar, reports, travel.">Календарь, отчёты, travel.</p>
+            </div>
+            <div class="sticker sticker--yellow sticker--timeline">
+              <span data-ru="−90% пропущенных встреч" data-en="−90% missed meetings">−90% пропущенных встреч</span>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020–2021</span>
+              <h3 class="timeline__company" data-ru="Фриланс" data-en="Freelance">Фриланс</h3>
+              <p class="timeline__role" data-ru="Influence-менеджер" data-en="Influencer Manager">Influence-менеджер</p>
+              <p class="timeline__desc" data-ru="3 блогера, 150K+ подписчиков." data-en="3 bloggers, 150K+ followers.">3 блогера, 150K+ подписчиков.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--skills anim-reveal">
+      <div class="skills">
+        <h2 class="section-title">[. SKILLS ]</h2>
+        <div class="skills__grid">
+          <div class="skills__group">
+            <h3 class="skills__heading">LANGUAGES</h3>
+            <ul class="typewriter-list">
+              <li><span class="typewriter-list__key" data-ru="русский" data-en="russian">русский</span><span class="typewriter-list__dots"></span><span class="typewriter-list__val" data-ru="родной" data-en="native">родной</span></li>
+              <li><span class="typewriter-list__key">english</span><span class="typewriter-list__dots"></span><span class="typewriter-list__val">B2-C1 (TOEIC)</span></li>
+              <li><span class="typewriter-list__key">한국어</span><span class="typewriter-list__dots"></span><span class="typewriter-list__val">B1</span></li>
+            </ul>
+          </div>
+          <div class="skills__group">
+            <h3 class="skills__heading">TOOLS</h3>
+            <ul class="typewriter-list">
+              <li>Notion, Asana, Miro, Platrum</li>
+              <li>amoCRM, YClients, Tilda</li>
+              <li>Google Sheets, Photoshop, CapCut</li>
+              <li><span class="ai-highlight" data-ru="AI-инструменты для автоматизации" data-en="AI tools for automation">AI-инструменты для автоматизации</span> <span class="deco-star-inline">✦</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blog" class="section section--notes anim-reveal">
+      <div class="notes">
+        <h2 class="section-title">[. NOTES ]</h2>
+        <div class="notes__board">
+          <article class="note-card note-card--yellow">
+            <span class="note-card__date" data-ru="12 апр 2026" data-en="Apr 12, 2026">12 апр 2026</span>
+            <h3 class="note-card__title" data-ru="Как я автоматизировала отчётность с помощью AI" data-en="How I automated reporting with AI">Как я автоматизировала отчётность с помощью AI</h3>
+            <span class="note-card__tag">#productivity</span>
+          </article>
+          <article class="note-card note-card--pink">
+            <span class="note-card__date" data-ru="8 апр 2026" data-en="Apr 8, 2026">8 апр 2026</span>
+            <h3 class="note-card__title" data-ru="5 инструментов которые я использую каждый день" data-en="5 tools I use every day">5 инструментов которые я использую каждый день</h3>
+            <span class="note-card__tag">#tools</span>
+          </article>
+          <article class="note-card note-card--blue">
+            <span class="note-card__date" data-ru="3 апр 2026" data-en="Apr 3, 2026">3 апр 2026</span>
+            <h3 class="note-card__title" data-ru="Мысли о системном подходе к работе" data-en="Thoughts on a systems approach to work">Мысли о системном подходе к работе</h3>
+            <span class="note-card__tag">#thoughts</span>
+          </article>
+        </div>
+        <a href="#" class="notes__more" data-ru="все заметки →" data-en="all notes →">все заметки →</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section section--contact anim-reveal">
+      <div class="contact">
+        <h2 class="section-title">[. SAY HI ]</h2>
+        <div class="contact__grid">
+          <div class="contact__text">
+            <p class="contact__intro" data-ru="Если вам нужен ассистент, который думает системами — напишите мне." data-en="If you need an assistant who thinks in systems — reach out.">Если вам нужен ассистент, который думает системами — напишите мне.</p>
+            <ul class="typewriter-list typewriter-list--contact">
+              <li><span class="typewriter-list__key">telegram</span><span class="typewriter-list__dots"></span><a href="https://t.me/monoisaa" class="typewriter-list__link" target="_blank" rel="noopener">@monoisaa</a></li>
+              <li><span class="typewriter-list__key">email</span><span class="typewriter-list__dots"></span><a href="mailto:vasilisa.n.nazarova@gmail.com" class="typewriter-list__link">vasilisa.n.nazarova@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="contact__aside">
+            <div class="sticker sticker--yellow sticker--contact">
+              <span>let's work together ✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-ru="© 2026 Василиса Назарова" data-en="© 2026 Vasilisa Nazarova">© 2026 Василиса Назарова</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
