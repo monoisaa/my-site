@@ -367,6 +367,8 @@ body.dark .sticker--accent {
 }
 
 .sticker--contact {
+  display: inline-block;
+  margin-top: 1.5rem;
   transform: rotate(3deg);
 }
 
@@ -484,86 +486,84 @@ body.dark .sticker--accent {
 }
 
 /* ===== About ===== */
-.about__grid {
-  display: grid;
-  grid-template-columns: 1fr 300px;
-  gap: 3rem;
-  align-items: flex-start;
+.about__text {
+  max-width: 720px;
+  margin: 0 auto;
 }
-
-.about__text { min-width: 0; }
 
 .about__text p {
-  font-size: 1.0625rem;
-  line-height: 1.8;
-}
-
-.about__tools {
-  margin-top: var(--space-md);
-  font-family: var(--font-heading);
-  font-size: 12px;
-  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
   color: var(--text-secondary);
-}
-
-.about__aside { position: relative; }
-
-/* ===== ID Card ===== */
-.id-card {
-  width: 100%;
-  background: var(--card-bg);
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  padding: 24px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
-  transition: background 0.3s ease, border-color 0.3s ease;
-}
-
-.id-card__header {
-  font-family: var(--font-heading);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  color: var(--text-secondary);
-  margin-bottom: 1rem;
-  opacity: 0.6;
-}
-
-.id-card__photo {
-  width: 120px;
-  height: 160px;
-  background: #e0e0e0;
-  border-radius: 2px;
-  margin-bottom: 1.25rem;
-}
-
-.id-card__fields {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-}
-
-.id-card__field {
-  display: flex;
-  flex-direction: column;
-  gap: 0.125rem;
-}
-
-.id-card__label {
-  font-family: var(--font-heading);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  color: var(--text-secondary);
-}
-
-.id-card__value {
-  font-family: var(--font-heading);
-  font-size: 11px;
-  color: var(--text);
 }
 
 /* ===== Timeline ===== */
+.experience__grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 3rem;
+  align-items: start;
+}
+
+.experience__main {
+  min-width: 0;
+}
+
+.experience__aside {
+  position: sticky;
+  top: 100px;
+  align-self: start;
+}
+
+.experience-meta {
+  font-family: var(--font-heading);
+  font-size: 12px;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.experience-meta__group + .experience-meta__group {
+  margin-top: 1.5rem;
+}
+
+.experience-meta__heading {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+
+.experience-meta__list,
+.experience-meta__tools {
+  list-style: none;
+}
+
+.experience-meta__list li {
+  display: flex;
+  align-items: baseline;
+}
+
+.experience-meta__key,
+.experience-meta__value {
+  flex-shrink: 0;
+}
+
+.experience-meta__dots {
+  flex: 1;
+  min-width: 2rem;
+  margin: 0 0.5rem;
+  border-bottom: 1px dotted var(--line);
+  position: relative;
+  top: -0.25em;
+}
+
+.experience-meta__tools li + li {
+  margin-top: 0.15rem;
+}
+
 .timeline {
   position: relative;
   padding-left: 2.5rem;
@@ -652,22 +652,6 @@ body.dark .sticker--accent {
   text-decoration-style: wavy;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
-}
-
-/* ===== Skills ===== */
-.skills__grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-}
-
-.skills__heading {
-  font-family: var(--font-heading);
-  font-size: 0.6875rem;
-  font-weight: 600;
-  letter-spacing: 0.12em;
-  color: var(--text-secondary);
-  margin-bottom: 1.25rem;
 }
 
 /* ===== Typewriter List ===== */
@@ -862,17 +846,6 @@ body.dark .sticker--accent {
 
   .hero__intro { margin: 0 auto; }
 
-  .about__grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-
-  .about__aside {
-    order: -1;
-    justify-self: center;
-    padding-bottom: var(--space-md);
-  }
-
   .timeline__item {
     grid-template-columns: 1fr;
     gap: 0.75rem;
@@ -880,9 +853,13 @@ body.dark .sticker--accent {
 
   .sticker--sm { justify-self: start; }
 
-  .skills__grid {
+  .experience__grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
+  }
+
+  .experience__aside {
+    position: static;
   }
 
   .notes__board {
@@ -940,9 +917,7 @@ body.dark .sticker--accent {
 
   .sticker { font-size: 0.8125rem; padding: 10px 14px; }
 
-  .id-card { padding: 18px; }
-  .id-card__photo { width: 100px; height: 125px; }
-  .about__text p { font-size: 0.9375rem; }
+  .about__text p { font-size: 17px; }
 
   .timeline { padding-left: 2rem; }
   .timeline__dot { left: -2rem; }
