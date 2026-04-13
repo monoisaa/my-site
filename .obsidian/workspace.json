@@ -11,10 +11,12 @@
             "id": "a7264e0002f3e0dc",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "type": "image",
+              "state": {
+                "file": "ref/2026-04-11 10.50.43 PM.jpg"
+              },
+              "icon": "lucide-image",
+              "title": "2026-04-11 10.50.43 PM"
             }
           }
         ]
@@ -188,5 +190,17 @@
     }
   },
   "active": "a7264e0002f3e0dc",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "ref/2026-04-11 10.50.31 PM.jpg",
+    "README.md",
+    "ref/Graphic Pin.jpg",
+    "ref/AI in Creative Work Exploration.jpg",
+    "ref/Blog Pin.jpg",
+    "ref/Fonts Pin.jpg",
+    "ref/Instagram Image.jpg",
+    "ref/NY Times Magazine.jpg",
+    "ref/Rituals & Co.jpg",
+    "ref/Portfolio 2025 Graphic Web Design.jpg",
+    "ref/2026-04-11 10.50.43 PM.jpg"
+  ]
 }
